@@ -4,9 +4,7 @@ using UnityEngine;
 
 namespace AutoAssigner
 {
-#if !MYBOX || MYBOX_DISABLE_INSPECTOR_OVERRIDE
     [CustomEditor(typeof(Object), true), CanEditMultipleObjects]
-#endif
     public class AutoAssignerEditor : 
 #if !MYBOX || MYBOX_DISABLE_INSPECTOR_OVERRIDE
         Editor
