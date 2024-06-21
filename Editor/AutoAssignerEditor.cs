@@ -4,9 +4,13 @@ using UnityEngine;
 
 namespace AutoAssigner
 {
-    [CustomEditor(typeof(Object), true)]
-    [CanEditMultipleObjects]
-    public class AutoAssignerEditor : Editor
+    [CustomEditor(typeof(Object), true), CanEditMultipleObjects]
+    public class AutoAssignerEditor : 
+#if !MYBOX || MYBOX_DISABLE_INSPECTOR_OVERRIDE
+        Editor
+#else
+        MyBox.Internal.UnityObjectEditor
+#endif
     {
         public override void OnInspectorGUI()
         {

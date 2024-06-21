@@ -3,7 +3,8 @@
     "rootNamespace": "AutoAssigner",
     "references": [
         "AutoAssigner",
-        "Unity.Addressables"
+        "Unity.Addressables",
+        "MyBox"
     ],
     "includePlatforms": [
         "Editor"
@@ -19,6 +20,11 @@
             "name": "com.unity.addressables",
             "expression": "",
             "define": "UNITY_ADDRESSABLES"
+        },
+        {
+            "name": "com.domybest.mybox",
+            "expression": "",
+            "define": "MYBOX"
         }
     ],
     "noEngineReferences": false
